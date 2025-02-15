@@ -1,0 +1,200 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 55px;
+    background-color: #007bff !important; /* Warna biru Bootstrap */
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+    
+    
+}
+
+.navbar {
+    box-shadow: 0 2px 4px #0000001a;
+    background-color: #007bff !important; /* Warna biru Bootstrap */
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important; /* Ubah warna teks navbar */
+}
+
+.navbar .nav-link:hover {
+    color:aqua !important; /* Warna kuning saat hover */
+}
+
+section {
+    padding: 80px 0;
+    
+}
+
+#home {
+    padding-top: 200px;
+    text-align: center;
+    
+}
+
+#home img {
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    background-color: #ff0000 !important; /* Warna merah */
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.about-img {
+    width: 400px; /* Sesuaikan ukuran lebar */
+    height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
+
+.about-text {
+    margin-left: 560px;
+    margin-top: -310px; 
+}
+
+#about .row {
+    display: flex;
+    align-items: flex-start; /* Geser teks ke atas */
+}
+
+.about-text p {
+    text-align: justify; /* Teks rata kiri-kanan */
+}
+
+#home, #about, #portfolio, #skills, #contact {
+    scroll-margin-top: 50px; /* Memberikan ruang tambahan saat di-scroll */
+}
+
+footer {
+    background-color: #007bff !important; /* Warna biru Bootstrap */
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: #007bff; /* Warna ikon */
+    margin: 0 0px;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+.social-icons a:hover {
+    color:aqua /* Warna saat hover */
+}
+
+/* Mengubah warna teks di bagian Tentang Saya */
+#about {
+    color: white;
+}
+
+/* Mengubah warna teks dalam deskripsi */
+#about p {
+    color: white;
+}
+
+/* Mengubah warna teks di bagian Keterampilan */
+#skills {
+    color: white;
+}
+
+/* Mengubah warna teks untuk kategori Word, Editing, Writing */
+#skills h3 {
+    color: white;
+}
+
+
+
+/* Tampilan untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+    /* Navbar lebih ringkas */
+    .navbar .navbar-brand {
+        font-size: 18px;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+
+    /* Home section: teks lebih kecil & tengah */
+    #home {
+        padding-top: 150px;
+    }
+
+    #home img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #home h1 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    /* About section: gambar dan teks jadi 1 kolom */
+    #about .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    /* Portofolio: card lebih kecil */
+    .card img {
+        height: auto;
+    }
+
+    /* Keterampilan: progress bar lebih kecil */
+    .progress {
+        height: 15px;
+    }
+
+    /* Kontak: form lebih rapi */
+    #contact input, #contact textarea {
+        font-size: 14px;
+    }
+
+    /* Footer lebih kecil */
+    footer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h1, h2, h3 {
+        font-size: clamp(20px, 5vw, 40px);
+    }
+    
+}
